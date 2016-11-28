@@ -1,0 +1,17 @@
+﻿using DataAccess;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Test
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var x = DBHelper.QueryMeds("cal", 200, "");
+            Console.ReadKey();
+        }
+    }
+}
